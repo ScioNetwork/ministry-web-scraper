@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 ========================================================= */
 async function scrapeMinistryOfJustice() {
   const browser = await chromium.launch({
-    headless: false,
+    headless: true,
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
 
@@ -94,7 +94,7 @@ async function scrapeMinistryOfEnergy() {
   const BASE_URL = "https://mev.gov.ua/news";
 
   const browser = await chromium.launch({
-    headless: false,
+    headless: true,
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
 
@@ -181,7 +181,7 @@ async function scrapeMinistryOfEnergy() {
 ========================================================= */
 async function scrapeMinistryOfFinance() {
   const browser = await chromium.launch({
-    headless: false,
+    headless: true,
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
 
